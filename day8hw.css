@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.board{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+    transition: all 0.5s linear;
+}
+#turn{
+    color: tomato;
+    font-size: 40px;
+    margin: 20px;
+    font-weight: 600;
+}
+#winner{
+    color: deepskyblue;
+    font-weight: 600;
+    margin: 20px;
+    font-size: 30px;
+}

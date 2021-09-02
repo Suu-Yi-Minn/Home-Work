@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(#e66467,#9198e5);
+}
+.card{
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px grey;
+    transition: transform 1s linear;
+}
+.card:hover{
+    transform: translateY(-30px);
+}
+.title{
+    text-align: center;
+    margin: 20px;
+    color: #f34139;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px grey;
+}
+.img{
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: rotate(-20deg);
+    transition: left 1s linear, width 1s linear;
+    /* transition: all 1s linear; */
+}
+.card:hover .img{
+    left: -80px;
+    width: 90%;
+}
+.price{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    border-radius: 12px;
+    background-color:#f34139 ;
+    color: white;
+    border-style: none;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px gray;
+}
+.buy{
+    opacity: 0;
+    top: 100%;
+    left: 10%;
+    transition: transform 1s linear, opacity 1s linear;
+}
+.card:hover .buy{
+    transform: translateY(-68px);
+    opacity: 1;
+}
+.details{
+    opacity: 0;
+    top: 80%;
+    left: 100%;
+    transition: transform 1s linear, opacity 1s linear;
+}
+.card:hover .details{
+    transform: translateX(-100px);
+    opacity: 1;
+}

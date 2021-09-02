@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: white;
+}
+.menu{
+    width: 100%;
+    /* height:7vh; */
+    background-color:orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.title{
+    width: 25%;
+    height: 5vh;
+    padding-top: 20px;
+    font-size: 19px;
+    color: white;
+}
+#nav{
+    display: none;
+}
+.navbtn{
+    display: none;
+}
+.mview{
+    display: none;
+}
+.cards{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10px;
+    background-color:tomato;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: trasform 0.5s linear;
+}
+.img{
+    width: 100%;
+    height:150px;
+    
+}
+.mtitle{
+    padding: 13px;
+    color: white;
+    font-size: 18px;
+}
+.mdetails{
+    padding: 13px;
+    color:white;
+    font-size: 15px;
+}
+.watch{
+    width: 150px;
+    height: 30px;
+    border-radius: 12px;
+    border-style:none;
+    background-color:blue;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 720px) {
+    .menu{
+        flex-direction: column;
+        padding-top:10%;
+    }
+    .title{
+        width: 100%;
+        background-color:orange;  
+    }
+    .navbtn{
+        display: block;
+        padding: 8px;
+        background-color: white;
+        border-radius: 8px;
+        margin: 10px 10px 10px auto;
+        cursor: pointer;
+    }
+    #nav:checked ~ .title{
+        display: none;
+    }
+    .mview{
+        display: block;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 2%;
+    }
+}
+.poster{
+    width: 400px;
+    height: 400px;
+    border-color: black;
+}

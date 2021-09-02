@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: tomato;  
+}
+.box{
+    position: absolute;
+    width: 500px;
+    height: 630px;
+    top: 3%;
+    left: 20%;
+    background-color:white;
+}
+h1{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    color: tomato;
+    font-weight: 800;
+}
+.userposition{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.usernamec{
+    width: 350px;
+    height: 30px;
+}
+.pwposition{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.passwordc{
+    width: 350px;
+    height: 30px;
+}
+.passwordp{
+    visibility: hidden;  
+}
+#password:focus ~ .passwordp{
+    color: red;
+    font-size: 15px;
+    visibility: visible;
+}
+.planposition{
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+.p1{
+    /* position: absolute; */
+    /* top:130%; */
+    color:white;
+    width: 200px;
+    /* height: 150px; */
+    padding: 10px;
+    border-radius: 15px;
+    background-color:darkblue;
+    display: none;
+}
+#free{
+    margin-left: 35px;
+}
+#free:checked ~ .p1{
+    display: block;
+}
+.p2{
+    /* position: absolute; */
+    /* top: 130%; */
+    color:white;
+    width: 300px;
+    /* height: 100px; */
+    padding: 10px;
+    border-radius: 15px;
+    background-color:darkgoldenrod;
+    display: none;
+}
+.goldc{
+    margin-left: 35px;
+}
+#gold:checked ~ .p2{
+    display: block;
+}
+.p3{
+    /* position:absolute; */
+    /* top: 130%; */
+    color:white;
+    width: 400px;
+    /* height: 80px; */
+    padding: 10px;
+    border-radius: 15px;
+    background-color:darkslategray;
+    display: none;
+}
+.diamondc{
+    margin-left: 35px;
+}
+#diamond:checked ~ .p3{
+    display: block;
+}
+.buttonposition{
+    position: relative;
+}
+#cancel{
+    padding: 13px;
+    border-radius: 20px;
+    border-color: gray;
+    /* position:absolute; */
+    /* top: 90%; */
+    /* left: 10%; */
+}
+#cancel:hover{
+    color: white;
+    background-color: brown;
+}
+#submit{
+    width: 230px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    /* position:absolute; */
+    /* top: 90%; */
+    /* left: 44%; */
+}
+#submit:hover{
+    color: white;
+    background-color: brown;
+}

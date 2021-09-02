@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="day6hw.css" rel="stylesheet" type="text/css" />
+    <script defer src="day6hw.js" type="text/javascript"> </script>
+</head>
+<body>
+    <div class="playground">
+        <div class="console">
+            <p class="title">String Method Playground</p>
+            <div class="showbox" id="showbox"></div>
+                <p class="label">Type Number for charAt, charCodeAt, includes, indexOf, lastIndexOf, startsWith, endsWith</p>
+                <input type="string" class="numberbx" id="number" />
+            <div class="methods">
+                <button class="method" onclick="charAt();">charAt()</button>
+                <button class="method" onclick="charCodeAt();">charCodeAt</button>
+                <button class="method" onclick="toUpperCase();">toUpperCase()</button>
+                <button class="method" onclick="toLowerCase();">toLowerCase()</button>
+                <button class="method" onclick="trim();">trim()</button>
+                <button class="method" onclick="includes();">includes()</button>
+                <button class="method" onclick="indexOf();">indexOf()</button>
+                <button class="method" onclick="lastIndexOf();">lastIndesOf()</button>
+                <button class="method" onclick="startsWith();">startsWith()</button>
+                <button class="method" onclick="endsWith();">endsWith()</button>
+            </div>
+        </div>
+        <div class="keyboard">
+            <input type="checkbox" id="caps" hidden />
+            <label class="capbtn" for="caps">Caps Lock</label>
+            <button class="key" id="a" onclick="press(this);">a</button>
+            <button class="key" id="b" onclick="press(this);">b</button>
+            <button class="key" id="c" onclick="press(this);">c</button>
+            <button class="key" id="d" onclick="press(this);">d</button>
+            <button class="key" id="e" onclick="press(this);">e</button>
+            <button class="key" id="f" onclick="press(this);">f</button>
+            <button class="key" id="g" onclick="press(this);">g</button>
+            <button class="key" id="h" onclick="press(this);">h</button>
+            <button class="key" id="i" onclick="press(this);">i</button>
+            <button class="key" id="j" onclick="press(this);">j</button>
+            <button class="key" id="k" onclick="press(this);">k</button>
+            <button class="key" id="l" onclick="press(this);">l</button>
+            <button class="key" id="m" onclick="press(this);">m</button>
+            <button class="key" id="n" onclick="press(this);">n</button>
+            <button class="key" id="o" onclick="press(this);">o</button>
+            <button class="key" id="p" onclick="press(this);">p</button>
+            <button class="key" id="q" onclick="press(this);">q</button>
+            <button class="key" id="r" onclick="press(this);">r</button>
+            <button class="key" id="s" onclick="press(this);">s</button>
+            <button class="key" id="t" onclick="press(this);">t</button>
+            <button class="key" id="u" onclick="press(this);">u</button>
+            <button class="key" id="v" onclick="press(this);">v</button>
+            <button class="key" id="w" onclick="press(this);">w</button>
+            <button class="key" id="x" onclick="press(this);">x</button>
+            <button class="key" id="y" onclick="press(this);">y</button>
+            <button class="key" id="z" onclick="press(this);">z</button>
+            <button class="key space" onclick="press(this);">&nbsp;</button>
+            <button class="key number" onclick="press(this);">1</button>
+            <button class="key number" onclick="press(this);">2</button>
+            <button class="key number" onclick="press(this);">3</button>
+            <button class="key number" onclick="press(this);">4</button>
+            <button class="key number" onclick="press(this);">5</button>
+            <button class="key number" onclick="press(this);">6</button>
+            <button class="key number" onclick="press(this);">7</button>
+            <button class="key number" onclick="press(this);">8</button>
+            <button class="key number" onclick="press(this);">9</button>
+            <button class="key number" onclick="press(this);">0</button>
+            <button class="key number space" onclick="cleartext();">Clear</button>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

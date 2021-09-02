@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+.title{
+    font-size: 30px;
+    margin: 10px;
+}
+.calendar{
+    width: 80%;
+    height: 55vh;
+    background-color: deepskyblue;
+    border-radius: 20px;
+    overflow: auto;
+}
+.days{
+    width: 95%;
+    height: 8vh;
+    background-color: turquoise;
+    border-radius: 15px;
+    margin: 10px auto;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.date{
+    width: 9%;
+    height: 6vh;
+    background-color: yellow;
+    border-radius: 12px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.day{
+    width: 10%;
+    height: 6vh;
+    background-color: violet;
+    border-radius: 12px;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.am{
+    width: 33%;
+    height: 5vh;
+    background-color: rebeccapurple;
+   border-radius: 12px;
+   font-size: 18px;
+   padding-left: 12px;
+   padding-top: 12px;
+   overflow: auto;
+}
+.pm{
+    width: 33%;
+    height: 5vh;
+    background-color:black;
+   border-radius: 12px;
+   font-size: 18px;
+   padding-left: 12px;
+   padding-top: 12px;
+   overflow: auto;
+   color: white;
+}
+.detail{
+    width: 25%;
+    height: 33vh;
+    background-color: salmon;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    display: none;
+}
+.dd{
+    font-size: 50px;
+    display: inline;
+}
+.detailday{
+    font-size: 20px;
+    display: inline;
+}
+.plan{
+    padding-top: 10px;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    margin: 5px;
+}
+.dplan{
+    height: 10vh;
+
+}
+.nplan{
+    height: 10vh;
+
+}
+#dplan{
+    display: none;
+}
+#nplan{
+    display: none;
+}
+.btn{
+    width: 90%;
+    height: 4vh;
+    background-color:skyblue;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin: 5px;
+}
